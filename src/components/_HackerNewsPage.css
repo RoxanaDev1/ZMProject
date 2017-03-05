@@ -1,0 +1,52 @@
+.HackerNewsPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.HackerNewsPage-StoryList {
+    padding-right: 40px;
+}
+
+.HackerNewsPage-Title {
+    display: inline-flex;
+    align-self: center;
+    font-family: fantasy;
+}
+
+.HackerNewsPage-LoadMore {
+    display: inline-flex;
+    align-self: center;
+    cursor: pointer 
+}
+
+.HackerNewsPage-LoadMore:hover {
+    color: blue
+}
+
+.HackerNewsPage-Title {
+    display: inline-flex;
+    align-self: center;
+    font-family: fantasy;
+}
+
+.HackerNewsPage-Loading{
+    display: inline-flex;
+    align-self: center;
+    font-size: -webkit-xxx-large;
+    font-weight: bold;
+    animation: Loading;
+    animation-duration: 10s;
+}
+
+.HackerNewsPage-NothingToLoad {
+    display: inline-flex;
+    align-self: center;
+    font-size: -webkit-xxx-large;
+    font-weight: bold;
+    padding: 0 40px 0 40px;
+}
+
+@keyframes Loading {
+    from {color: rebeccapurple}
+    to {color: cadetblue}
+}

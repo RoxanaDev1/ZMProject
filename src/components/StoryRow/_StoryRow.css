@@ -1,0 +1,27 @@
+.StoryRow {
+    display: inline-block;
+    border-bottom-style: solid;
+    margin: 10px;
+    width: 100%;
+}
+
+.StoryRow-Title {
+    font-style: italic;
+    font-size: xx-large;
+    color: cornflowerblue;
+    margin-bottom: 10px;
+}
+
+.StoryRow-Information-Description, .StoryRow-Information-Score-Title, .StoryRow-Information-Time-Title, .StoryRow-Author-Title, .StoryRow-Information-Url, .StoryRow-Author-Karma {
+    font-family: fantasy;
+    margin: 10px 0 10px 0;
+}
+
+.StoryRow-Author {    
+    display: flex;
+    align-items: center;
+}
+
+.StoryRow-Author-Name, .StoryRow-Information-Score-Content, .StoryRow-Author-KarmaScore, .StoryRow-Information-Time-Content {
+    margin: 0 10px 0 10px;
+}
