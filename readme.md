@@ -7,13 +7,13 @@ ZM Project - Hacker News - Code challenge
 The project is built with TypeScript/React using VSCode.
 
 The requirements the following:
-1. Fetch 10 random stories.
-2. Sort the stories based on their score.
-3. Show the following information: Story title/url/timestamp/score and author id/karma score.
-4. All data should be fetched before showing anything.
+* Fetch X random stories.
+* Sort the stories based on their score.
+* Show the following information: Story title/url/time stamp/score and author id/karma score.
+* All data should be fetched before showing anything.
 
 Extra functionality:
-1. Load more - fetching 10 more random stories.
+* Load more - fetching X more random stories.
 
 ### Installing
 
@@ -27,7 +27,7 @@ npm start
 ## Project Information
 
 In order to achieve the assignment requirements, 3 endpoints should be triggered and responses should be synced. 
-The dependency is the following: get stories ids -> select 10 stories and get their information -> build the needed authors -> get their information -> display.
+The dependency is the following: get stories ids -> select X stories and get their information -> build the needed authors -> get their information -> display.
 
 **Saving on rest calls:**
 Ideally the endpoints provided should have used some filtering mechanism, as each story/author needs 1 rest call, this means that in order to get 10 stories we need up to 20 rest calls. The site stated that they did not implement rate limits, as if they would this code would probably end up getting 429s.
@@ -58,8 +58,10 @@ One more note is that I like to keep THE render() function simple, meaning that 
 I like to keep my files structured and documented, meaning that I will not put rest calls functions inside render functions blocks.
 Each section has a "title" which explains what type of functions one can find under this block. This so helpful on a bigger scale projects.
 
+**Other notes:**
+I did not go to much into css, just added some simple styles while trying to keep a nice structure.
+The time - I used moment, but did not make it further into a nicer display.
+
 ## Acknowledgements
 
 * Initial help in getting things started: https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
-
-0
